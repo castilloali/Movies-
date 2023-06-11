@@ -1,14 +1,14 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
 
-const MoveCard = () => {
+const MoveCard = ({mov}) => {
   return (
         <Col col="4" sm="4" md="3" lg="2">
             <div className='card'>
-                <img src='image/img (1).jpg' alt=''/>
+                <img src={mov.profile_path} alt=''/>
                 <div className='title'>
-                    <h2>Name Movie</h2>
-                    <p>efewfe fewfewf ewfefwop 3rj4oj sjbp </p>
+                    <h2>{mov.name}</h2>
+                    <p> gerergger  rgggegrre</p>
                 </div>
             </div>
         </Col>

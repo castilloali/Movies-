@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
         <NavBar/>
-        <MovieListe/>
+        <MovieListe movis={movis}/>
         {/* https://api.themoviedb.org/3/person/popular?api_key=7bd176819684edf54eff123f28edf523 */}
     </div>
   );
