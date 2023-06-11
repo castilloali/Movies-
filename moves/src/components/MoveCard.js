@@ -14,4 +14,5 @@ const MoveCard = () => {
         </Col>
   )
 }
-
+
+export default MoveCard
