@@ -5,10 +5,10 @@ const MoveCard = ({mov}) => {
   return (
         <Col col="4" sm="4" md="3" lg="2">
             <div className='card'>
-                <img src={mov.profile_path} alt=''/>
+                <img src={`https://image.tmdb.org/t/p/w500//`+ mov.backdrop_path} alt=''/>
                 <div className='title'>
-                    <h2>{mov.name}</h2>
-                    <p> gerergger  rgggegrre</p>
+                    <h2>{mov.original_title}</h2>
+                    <p></p>
                 </div>
             </div>
         </Col>

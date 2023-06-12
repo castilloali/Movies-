@@ -87,7 +87,7 @@ body {
 .title {
     position: absolute;
     z-index: 20;
-    bottom: 20%;
+    bottom: -20%;
     left: 0 ; 
     opacity: 0;
     transition: .2s;
