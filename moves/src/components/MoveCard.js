@@ -7,8 +7,9 @@ const MoveCard = ({mov}) => {
             <div className='card'>
                 <img src={`https://image.tmdb.org/t/p/w500//`+ mov.backdrop_path} alt=''/>
                 <div className='title'>
-                    <h2>{mov.original_title}</h2>
-                    <p></p>
+                    <p>{mov.original_title}</p>
+                    <p>{mov.release_date}</p>
+                    <p>{mov.vote_average}</p>
                 </div>
             </div>
         </Col>

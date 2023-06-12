@@ -1,7 +1,10 @@
 import React from 'react'
 import {  Container } from 'react-bootstrap'
 
-const NavBar = () => {
+const NavBar = ({search}) => {
+  const onSearch = (word) => {
+    search(word)
+  }
   return (
     <div className='navbar py-4'>
     <Container>
@@ -10,7 +13,7 @@ const NavBar = () => {
                     <h2 className='logo'>Mo<span className='special-v'>V</span>es</h2>
                     
                     
-                    <input type="text" placeholder="search for your movie..." name="text" class="input"/>
+                    <input type="text" onChange={(e) => onSearch(e.target.value) }  placeholder="search for your movie..." name="text" className="input"/>
                     <ul>
                       <li>vvd</li>
                       <li>fewf</li>

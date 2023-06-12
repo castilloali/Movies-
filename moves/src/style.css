@@ -41,6 +41,9 @@ body {
     padding: 10px 1rem;
     transition: 0.25s;
     width: 300px;
+    color: var(--color4);
+    font-weight: bold;
+    font-size: 20px;
 }
 .input:focus {
     outline-offset: 5px;
@@ -88,14 +91,15 @@ body {
     position: absolute;
     z-index: 20;
     bottom: -20%;
-    left: 0 ; 
+    width: 100%;
+    left: 50% ;
+    transform: translateX(-50%); 
     opacity: 0;
     transition: .2s;
     cursor: pointer;
+    text-align: center;
 }
-.title h2 {
 
-}
 
 .container-card {
     margin-top: 100px;
