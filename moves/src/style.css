@@ -3,7 +3,7 @@
     --color2 : #345B63 ;
     --color3 : #152D35 ;
     --color4 : #112031 ;
-    --color5 : #4AE5C5 ;
+    --color5 : #f5f50d ;
     --color6 : #4d52ce ;
 }
 .color5 {
@@ -16,6 +16,10 @@
 .coloractive {
     background-color: var(#2BD479);
 }
+.coloractive:hover {
+    background-color: #2b8a4f;
+
+} 
 
 * {
     color: var(--color1);

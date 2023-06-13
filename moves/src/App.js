@@ -13,10 +13,14 @@ function App() {
 
   const [movis, setMovies] = useState([])
   const handilApi = async () => {
-    const axi = await axios.get('https://api.themoviedb.org/3/movie/popular?api_key=7bd176819684edf54eff123f28edf523')
+    const axi = await axios.get('https://api.themoviedb.org/3/movie/popular?api_key=7bd176819684edf54eff123f28edf523&page=2')
     setMovies(axi.data.results)
   }
 
+  const getpages = async (page) => {
+    const axi = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=7bd176819684edf54eff123f28edf523&page=${page}`)
+    setMovies(axi.data.results)
+  }
 
   useEffect(() => {
     handilApi()
@@ -37,7 +41,7 @@ const search = async (word) => {
   return (
     <div className="App">
         <NavBar search={search}/>
-        <MovieListe movis={movis}/>
+        <MovieListe movis={movis} getpages={getpages}/>
         {/* <Pagnationcom/> */}
     </div>
   );

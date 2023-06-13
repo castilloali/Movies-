@@ -3,7 +3,7 @@ import MoveCard from './MoveCard';
 import Pagnationcom from './Pagnationcom';
 import {  Container, Row } from 'react-bootstrap';
 
-const MovieListe = ({movis}) => {
+const MovieListe = ({movis, getpages }) => {
         return (
         <div>
                 <Container fluid className='container-card'>
@@ -14,7 +14,7 @@ const MovieListe = ({movis}) => {
                                 })) : <h2>none</h2>
                                 }
                         </Row>    
-                <Pagnationcom/>
+                <Pagnationcom getpages={getpages}/>
         </Container>
         </div>
         )
