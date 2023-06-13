@@ -3,6 +3,18 @@
     --color2 : #345B63 ;
     --color3 : #152D35 ;
     --color4 : #112031 ;
+    --color5 : #4AE5C5 ;
+    --color6 : #4d52ce ;
+}
+.color5 {
+    background-color: var(--color5);
+}
+.color2 {
+    background-color: var(--color2);
+}
+
+.coloractive {
+    background-color: var(#2BD479);
 }
 
 * {
@@ -113,7 +125,7 @@ body {
     top: 0;
 }
 
-ul {
+.category {
     position: absolute;
     bottom: -83px;
     left: 50%;

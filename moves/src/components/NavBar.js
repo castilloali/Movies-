@@ -14,7 +14,7 @@ const NavBar = ({search}) => {
                     
                     
                     <input type="text" onChange={(e) => onSearch(e.target.value) }  placeholder="search for your movie..." name="text" className="input"/>
-                    <ul>
+                    <ul className='category'>
                       <li>vvd</li>
                       <li>fewf</li>
                       <li>vvdweffew</li>

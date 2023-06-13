@@ -1,7 +1,7 @@
 
 import NavBar from './components/NavBar';
 import MovieListe from './components/MovieListe';
-
+// import Pagnationcom from './components/Pagnationcom';
 import axios from 'axios';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -38,6 +38,7 @@ const search = async (word) => {
     <div className="App">
         <NavBar search={search}/>
         <MovieListe movis={movis}/>
+        {/* <Pagnationcom/> */}
     </div>
   );
 }
