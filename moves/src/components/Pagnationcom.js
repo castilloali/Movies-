@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactPaginate from 'react-paginate'
 
-const Pagnationcom = ({getpages}) => {
+const Pagnationcom = ({getpages, pageCont}) => {
   const handlePageClick = (data) => {
     getpages(data.selected + 1)
     // console.log(data.selected)
   } 
-const pageCount = 200
+const pageCount = pageCont
   return (
         <ReactPaginate
           breakLabel="..."

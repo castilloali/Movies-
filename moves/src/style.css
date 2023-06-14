@@ -3,11 +3,12 @@
     --color2 : #345B63 ;
     --color3 : #152D35 ;
     --color4 : #112031 ;
-    --color5 : #f5f50d ;
+    --color5 : #bb0df5 ;
     --color6 : #4d52ce ;
 }
 .color5 {
     background-color: var(--color5);
+    color: white;
 }
 .color2 {
     background-color: var(--color2);
@@ -141,4 +142,23 @@ body {
     list-style: none;
     background-color: var(--color4);
     box-shadow: 0px 6px 6px -1px black;
+}
+
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.containermoviedatilescard {
+    margin-top: 120px;
+}
+.moviedatilescard {
+    height: 450px;
+    border-radius: 19px;
+    background: linear-gradient(45deg, #0f1d2c, #122234);
+    box-shadow: 0px 5px 13px 4px #0a121c;
+
 }
