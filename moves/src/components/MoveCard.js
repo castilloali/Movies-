@@ -3,6 +3,7 @@ import { Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const MoveCard = ({mov}) => {
+
   return (
         <Col col="4" sm="4" md="3" lg="2">
             <Link to={`/movie/${mov.id}`}>
