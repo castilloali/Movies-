@@ -53,3 +53,7 @@ const search = async (word) => {
 }
 
 export default App;
+
+
+
+
