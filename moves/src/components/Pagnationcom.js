@@ -12,8 +12,8 @@ const pageCount = pageCont
           breakLabel="..."
           nextLabel="next >"
           onPageChange={handlePageClick}
-          marginPagesDisplayed={2}
-          pageRangeDisplayed={2}
+          marginPagesDisplayed={1}
+          pageRangeDisplayed={1}
           pageCount={pageCount}
           previousLabel="< previous"
 

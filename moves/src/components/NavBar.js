@@ -10,7 +10,9 @@ const NavBar = ({search}) => {
     <Container>
 
                 <div className='d-flex justify-content-between ' >
+                  <a href="/" >
                     <h2 className='logo'>Mo<span className='special-v'>V</span>es</h2>
+                  </a>
                     
                     
                     <input type="text" onChange={(e) => onSearch(e.target.value) }  placeholder="search for your movie..." name="text" className="input"/>

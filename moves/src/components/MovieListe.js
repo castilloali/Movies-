@@ -14,7 +14,9 @@ const MovieListe = ({movis, getpages, pageCont }) => {
                                 })) : <h2>none</h2>
                                 }
                         </Row>    
-                <Pagnationcom getpages={getpages} pageCont={pageCont}/>
+                        {
+                                movis.length >= 1? <Pagnationcom getpages={getpages} pageCont={pageCont}/> : ''
+                        }
         </Container>
         </div>
         )

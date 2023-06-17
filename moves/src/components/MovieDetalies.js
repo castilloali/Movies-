@@ -1,5 +1,5 @@
 import React , {useState, useEffect } from 'react'
-import { Container, Row , Col } from 'react-bootstrap'
+import { Container, Row , Col, Button } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 
 import axios from 'axios'
@@ -32,18 +32,28 @@ const MovieDetalies = () => {
                     <div className='hold-img'> <img className='' src={`https://image.tmdb.org/t/p/w500//${movie.poster_path}`}  alt=''/> </div>
                     </Col>
                     <Col xs={12} sm={6} md={6} lg={7} className='  '>
-                      <div className='text-xs-start font-monospace p-3 w-100'>
-                        <h2>Name: {movie.original_title}</h2>
-                        <h2>Date: {movie.release_date}</h2>
-                        <h2>Vote: {movie.vote_count}</h2>
+                      <div className='text-xs-start font-monospace p-3 w-100 text-center gap-5'>
+                        <h2 className='border-bottom pt-3'>Name: {movie.original_title}</h2>
+                        <h2 className='border-bottom pt-3'>Date: {movie.release_date}</h2>
+                        <h2 className='border-bottom pt-3'>Vote: {movie.vote_count}</h2>
                       </div>
-
-
                     </Col>
                 </Row>
             </Container>
-
         </div>
+        <div className='moviedatilescard my-5'> 
+        <Container>
+          <Row className='flex-row-reverse'>
+            <h2 className='p-3 ps-5'>Story :</h2>
+            <p className='ps-5'>{movie.overview}</p>
+          </Row>
+        </Container>
+        <div className='text-center'>
+          <a href='/'> <Button className='mx-2'>Back</Button> </a>
+          <Button className='mx-2'>Wach Movie</Button>
+        </div>
+        </div>
+
     </Container>
         
   )
