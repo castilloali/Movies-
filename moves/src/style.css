@@ -194,7 +194,7 @@ a {
 @media (max-width: 493px) {
     .input {
         position: absolute;
-        top: 59%;
+        top: 80%;
         left: 50%;
         width: 233px;
         transform: translateX(-50%);

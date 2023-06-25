@@ -11,15 +11,25 @@ import {BrowserRouter, Route, Routes} from "react-router-dom"
 import { useEffect, useState } from 'react';
 
 
+
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllMovies } from './redux/action/MovieAction';
+
 function App() {
 
   const [movis, setMovies] = useState([])
   const [pageCont, setPageCont] = useState(0)
+
+
+
+
+  const dispatch = useDispatch()
   const handilApi = async () => {
     const axi = await axios.get('https://api.themoviedb.org/3/movie/popular?api_key=7bd176819684edf54eff123f28edf523')
     setMovies(axi.data.results)
     setPageCont(axi.data.total_pages)
   }
+  console.log(movis)
   const getpages = async (page) => {
     const axi = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=7bd176819684edf54eff123f28edf523&page=${page}`)
     setMovies(axi.data.results)
@@ -27,8 +37,8 @@ function App() {
   }
   useEffect(() => {
     handilApi()
+    dispatch(getAllMovies())
   }, [])
-  console.log(movis)
 
 const search = async (word) => {
   if (word === "") {
